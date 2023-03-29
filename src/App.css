@@ -1,0 +1,30 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: burlywood;
+    width: auto;
+    height: 90px;
+}
+
+.brandLogo img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+.itemList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+}
+
+
+
+.carritoIcono img {
+    width: 55px;
+    height: 50px;
+    padding: 10px;
+}
