@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: burlywood;
+    background-color: whitesmoke;
     width: auto;
     height: 90px;
 }
@@ -18,10 +18,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 200px;
+    align-items: center;
+    width: 300px;
+    list-style: none;
 }
-
-
 
 .carritoIcono img {
     width: 55px;
