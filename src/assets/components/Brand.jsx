@@ -5,6 +5,7 @@ const Brand = () => {
   return (
     <div className='brandLogo'>
         <img src={Logo} alt="" />
+        <h2>Sneakers Top</h2>
     </div>
   )
 }

@@ -8,6 +8,12 @@
     height: 90px;
 }
 
+.brandLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .brandLogo img {
     width: 80px;
     height: 80px;
