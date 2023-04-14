@@ -1,12 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Logo from "../../assets/img/sneaker.png"
+
 
 const Brand = () => {
   return (
-    <div className='brandLogo'>
-        <img src={Logo} alt="" />
+    <Link to='/'> <div className='brandLogo'>
+     
+      <img src={Logo} alt="" />
         <h2>Sneakers Top</h2>
-    </div>
+      
+      
+        
+    </div></Link>
   )
 }
 

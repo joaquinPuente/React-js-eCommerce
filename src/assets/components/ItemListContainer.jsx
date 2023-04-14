@@ -1,13 +1,20 @@
 import React from 'react'
 import '../../App.css'
 import Dropdown from 'react-bootstrap/Dropdown';
+import { Link } from 'react-router-dom';
 
-const Itemlist = ( {greeting} ) => {
+const ItemListContainer = ( {greeting} ) => {
   return (
     <div>
         <ul className='itemList'>
-            <li>{greeting}</li>
-            <li>Todo</li>
+            <li>
+            <Link to='/'>
+              {greeting}
+            </Link>
+            </li>
+            <li>
+              <Link to='/productos'>Todo</Link>
+            </li>
             <Dropdown>
 
               <Dropdown.Toggle variant="light" id="dropdown-basic">
@@ -27,4 +34,4 @@ const Itemlist = ( {greeting} ) => {
   )
 }
 
-export default Itemlist
+export default ItemListContainer
