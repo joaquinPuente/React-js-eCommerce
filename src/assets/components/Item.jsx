@@ -7,10 +7,10 @@ import { useContext } from 'react'
 
 
 const Item = ({id,title,price,image,category,cantidad}) => {
-  console.log(id, title, price, image, category, cantidad)
+  console.log(image)
   
   return (
-    <div>
+    <div className='items'>
         <Card id={id} style={{ width: '18rem' }}>
       <Card.Img variant="top" src={image} />
       <Card.Body>
@@ -18,8 +18,8 @@ const Item = ({id,title,price,image,category,cantidad}) => {
         <Card.Text>
           Precio:{price}
         </Card.Text>
-        <Button className='m-10' variant="primary">Comprar</Button>
-        <Button className='m-10' variant="secondary">Comprar</Button>
+        <Button className='me-2' variant="primary">Comprar</Button>
+        <Button className='me-2' variant="secondary">Contador</Button>
       </Card.Body>
     </Card>
 
