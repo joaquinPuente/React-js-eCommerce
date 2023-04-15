@@ -8,6 +8,7 @@ import Carrito from './Cart'
 const Navbar = () => {
   return (
     <div className='navBar'>
+      
         <Brand/>
         <ItemListContainer greeting="Inicio"/>
         <Carrito/>

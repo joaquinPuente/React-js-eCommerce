@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -7,32 +6,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './assets/components/Footer'
 import Carrusel from './assets/components/Carrusel'
 import { Route, BrowserRouter, Routes} from 'react-router-dom'
-import Cartas from './assets/components/Cartas'
+import ItemList from './assets/components/ItemList'
+import  {DataProvider}  from './service/DataProvider.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
+    <DataProvider>
     <div className="App">
-
-      <BrowserRouter>
-      
+      <BrowserRouter>  
       <Navbar/>
 
       <Routes>
       <Route path='/' element={<Carrusel/>} />
-      <Route path='/productos' element={<Cartas/>} />
+      <Route path='/productos' element={<ItemList/>} />
       </Routes>
       
-      <Footer/>
-      
-      
-      </BrowserRouter>
-      
-      
-      
-      
+      <Footer/>      
+      </BrowserRouter>     
     </div>
+    </DataProvider>
   )
 }
 
