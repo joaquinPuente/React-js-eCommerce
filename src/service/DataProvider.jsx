@@ -21,6 +21,7 @@ export const DataProvider = (props) => {
 	}, []);
 
     const value = { productos:[productos] }
+    
     return (
         <DataContext.Provider value= {value}>
             {props.children}
