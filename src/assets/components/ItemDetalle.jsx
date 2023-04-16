@@ -22,7 +22,7 @@ export const ItemDetalle = () => {
     
     useEffect(()=>{
         productos.forEach( (producto) => {
-            console.log(producto.id , parseInt(params.id))
+            
             if(producto.id === parseInt(params.id)){
                 setDetalle(producto)
             }
@@ -30,7 +30,7 @@ export const ItemDetalle = () => {
     }, [params.id,productos]
     )
 
-    console.log(detalle)
+    
 
 
 
