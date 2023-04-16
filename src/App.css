@@ -45,7 +45,8 @@
 .containerCartas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 10px;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 .items {
     margin: 10px;
@@ -56,3 +57,20 @@
     justify-content: center;
 }
 
+
+.itemDetalle {
+    display: flex;
+    justify-content: center;
+}
+
+a:Link {
+    text-decoration: none;
+}
+
+.linkTo, .linkTo:hover{
+    color: black;
+}
+
+.linkTo1 , .linkTo1:hover{
+    color: aliceblue;
+}

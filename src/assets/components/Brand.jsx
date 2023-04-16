@@ -5,7 +5,7 @@ import Logo from "../../assets/img/sneaker.png"
 
 const Brand = () => {
   return (
-    <Link to='/'> <div className='brandLogo'>
+    <Link to='/'className='linkTo'> <div className='brandLogo'>
      
       <img src={Logo} alt="" />
         <h2>Sneakers Top</h2>

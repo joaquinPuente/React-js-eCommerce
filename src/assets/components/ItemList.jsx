@@ -22,6 +22,7 @@ const ItemList = () => {
 									price={producto.price}
 									id={producto.id}
 								/>
+                
                )
               })
 						}

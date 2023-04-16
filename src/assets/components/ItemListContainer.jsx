@@ -8,12 +8,12 @@ const ItemListContainer = ( {greeting} ) => {
     <div>
         <ul className='itemList'>
             <li>
-            <Link to='/'>
+            <Link to='/' className='linkTo'>
               {greeting}
             </Link>
             </li>
             <li>
-              <Link to='/productos'>Todo</Link>
+              <Link to='/productos' className='linkTo'>Todo</Link>
             </li>
             <Dropdown>
 
@@ -24,7 +24,6 @@ const ItemListContainer = ( {greeting} ) => {
               <Dropdown.Menu>
                 <Dropdown.Item href="#/action-1">Urbanas</Dropdown.Item>
                 <Dropdown.Item href="#/action-2">Deportivas</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Casuales</Dropdown.Item>
               </Dropdown.Menu>
 
             </Dropdown>
