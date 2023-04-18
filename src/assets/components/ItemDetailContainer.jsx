@@ -12,13 +12,11 @@ import { useEffect, useContext, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { DataContext } from '../../service/DataProvider';
 
-export const ItemDetalle = () => {
+export const ItemDetailContainer = () => {
     const value = useContext(DataContext)
     const [productos] = value.productos;
     const [detalle, setDetalle] = useState([]);
     const params = useParams()
-
-    
     
     useEffect(()=>{
         productos.forEach( (producto) => {
@@ -29,9 +27,6 @@ export const ItemDetalle = () => {
         });
     }, [params.id,productos]
     )
-
-    
-
 
 
   return (

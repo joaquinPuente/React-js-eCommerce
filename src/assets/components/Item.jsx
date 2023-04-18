@@ -4,12 +4,12 @@ import Card from 'react-bootstrap/Card'
 import Logo from '../img/shoes.jpg'
 import { DataContext } from '../../service/DataProvider'
 import { useContext } from 'react'
-import { Link, Route, Router, Routes } from 'react-router-dom'
-import { ItemDetalle } from './ItemDetalle'
+import { Link, Route, Router, Routes, useParams } from 'react-router-dom'
+import { ItemDetailContainer } from './ItemDetailContainer'
 
 
 const Item = ({id,title,price,image,category,cantidad}) => {
-  
+
   return (
     <div className='items'>
         <Card id={id} style={{ width: '18rem' }}>

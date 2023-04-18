@@ -8,7 +8,7 @@ import Carrusel from './assets/components/Carrusel'
 import { Route, BrowserRouter, Routes} from 'react-router-dom'
 import ItemList from './assets/components/ItemList'
 import  {DataProvider}  from './service/DataProvider.jsx'
-import { ItemDetalle } from './assets/components/ItemDetalle';
+import { ItemDetailContainer } from './assets/components/ItemDetailContainer';
 
 function App() {
 
@@ -22,7 +22,10 @@ function App() {
       <Routes>
       <Route path='/' element={<Carrusel/>} />
       <Route path='/productos' element={<ItemList/>} />
-      <Route path='/productos/:id' element={<ItemDetalle/>} />
+      <Route path='/productos/:id' element={<ItemDetailContainer/>} />
+      <Route path='/urbana' element={<ItemList/>}/>
+      <Route path='/deportiva' element={<ItemList/>}/>
+      
       </Routes>
       
       <Footer/>      

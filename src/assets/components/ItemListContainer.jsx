@@ -22,8 +22,12 @@ const ItemListContainer = ( {greeting} ) => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Urbanas</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Deportivas</Dropdown.Item>
+                <Dropdown.Item href="#/action-1">
+                <Link to='/urbanas' className='linkTo'>Urbanas</Link>
+                </Dropdown.Item>
+                <Dropdown.Item href="#/action-1">
+                <Link to='/deportivas' className='linkTo'>Deportivas</Link>
+                </Dropdown.Item>
               </Dropdown.Menu>
 
             </Dropdown>
